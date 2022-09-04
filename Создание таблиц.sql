@@ -1,4 +1,5 @@
 CREATE DATABASE db;
+USE db;
 CREATE TABLE posts (
     id            int PRIMARY KEY,
     userId        int,           
@@ -13,7 +14,3 @@ CREATE TABLE comments (
 	email  		  varchar(100),
     body          varchar(1000)          
 );
-
-
-
-

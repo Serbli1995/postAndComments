@@ -1,5 +1,4 @@
-
--- Создаем таблицы
+CREATE DATABASE db;
 CREATE TABLE posts (
     id            int PRIMARY KEY,
     userId        int,           

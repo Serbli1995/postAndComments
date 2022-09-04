@@ -1,6 +1,7 @@
 CREATE DATABASE db;
 CREATE USER 'php_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON db . * TO 'php_user'@'localhost';
+FLUSH PRIVILEGES;
 USE db;
 CREATE TABLE posts (
     id            int PRIMARY KEY,

@@ -1,4 +1,6 @@
 CREATE DATABASE db;
+CREATE USER 'php_user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON db . * TO 'php_user'@'localhost';
 USE db;
 CREATE TABLE posts (
     id            int PRIMARY KEY,
